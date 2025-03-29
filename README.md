@@ -1,12 +1,85 @@
-# React + Vite
+# EmployWise-Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based user management application with authentication, user listing, search, filtering, and CRUD functionalities.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- User login with authentication
+- Fetch users from API
+- Search and filter users
+- Edit and delete users
+- Toast notifications for success/error messages
+- Pagination support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- **Frontend**: React.js, Redux Toolkit, Tailwind CSS
+- **Backend**: Mock API
+- **Libraries**: Axios, React-Toastify, React-Router
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📥 Installation
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/VijayDeshwal339/EmployWise-Assignment.git
+cd EmployWise-Assignment
+```
+
+### 2️⃣ Install dependencies
+```sh
+npm install
+```
+
+### 3️⃣ Start the development server
+```sh
+npm run dev
+```
+
+> The app will be available at `http://localhost:5174`
+
+---
+
+## 🔑 Environment Variables
+Create a `.env` file in the root directory and add the following variables:
+```
+VITE_API_URL=https://reqres.in/api
+```
+
+---
+
+## 📌 Assumptions & Considerations
+- Using `reqres.in` as a mock API for login and fetching users.
+- Login credentials must match API-provided test accounts.
+- No actual user data is stored; API responses are static.
+- Pagination and filtering are handled client-side.
+
+---
+
+## 📄 Scripts
+- `npm run dev` – Start development server
+- `npm run build` – Build production-ready files
+- `npm run lint` – Lint the project
+
+---
+
+## 🛠 Dependencies Used
+| Library           | Purpose                         |
+|------------------|--------------------------------|
+| React.js        | UI framework                   |
+| Redux Toolkit   | State management               |
+| React Router    | Navigation & routing           |
+| Tailwind CSS    | Styling                         |
+| Axios          | API requests                    |
+| React-Toastify | Notifications                   |
+
+---
+
+## 💡 Future Enhancements
+- Add role-based authentication
+- Improve API handling with real backend integration
+- Enhance UI with animations and better design
+
+---
+
+## 📝 License
+This project is **MIT Licensed**.
+
